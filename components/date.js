@@ -1,6 +1,5 @@
-
-/*let today = new Date();
-let day = today.getDay();
+let today = new Date();
+let day = today.getDate();
 let month = today.getMonth()+1;
 const year = today.getFullYear();
 
@@ -14,20 +13,20 @@ if (month < 10) {
 }
 
 
-today = day + '/' + month + '/' + year;
-
+today = year + '-' + month + '-' + day ;
 console.log(today);
+
 
 const date = document.getElementById("date");
-date.setAttribute("min", today);*/
+date.setAttribute("min", today);
 
-let today = new Date();
-let dd = String(today.getDate()).padStart(2, '0');
-let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-let yyyy = today.getFullYear();
+// let today = new Date();
+// let dd = String(today.getDate()).padStart(2, '0');
+// let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+// let yyyy = today.getFullYear();
 
-today = dd + '/' + mm + '/' + yyyy;
-console.log(today);
+// today = dd + '/' + mm + '/' + yyyy;
+// console.log(today);
 
 
 

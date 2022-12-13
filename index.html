@@ -27,10 +27,8 @@
       <div class="row">
         <div class="col-md-4">
           <label for="name" class="form-label">Nom</label>
-          <input name="name" type="text" class="form-control" id="name" min="1" max="255" data-bs-toggle="tooltip"
-            data-bs-placement="top" data-bs-title="Tooltip on top" required>
-          <div class="valid-feedback">
-            Ce champ est obligatoire
+          <input name="name" type="text" class="form-control" id="name" min="1" max="255" required>
+          <div>
           </div>
           <div class="form-text" for="name" id="nameHelp">Nom de l'évènement.</div>
         </div>
@@ -52,14 +50,14 @@
       </div>
       <div class="row">
         <div class="col-md-8">
-          <label for="thème" class="form-label">Thème</label>
-          <select name="thème" class="form-select" id="theme" required>
+          <label for="theme" class="form-label">Thème</label>
+          <select name="theme" class="form-select" id="theme" required>
             <option selected disabled value="">Choisir un thème dans la liste</option>
             <option>Écologie</option>
             <option>Ressources Humaines</option>
             <option>Tech</option>
           </select>
-          <div class="form-text" for="thème" id="themeHelp">Thème de l'évènement.</div>
+          <div class="form-text" for="theme" id="themeHelp">Thème de l'évènement.</div>
         </div>
         <div class=" col-md-4">
           <label for="tarif" class="form-label">Tarif</label>
