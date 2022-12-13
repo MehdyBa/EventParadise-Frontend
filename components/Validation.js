@@ -7,10 +7,11 @@ form.addEventListener("submit", (event) => {
 const elements = form.elements;
 
 for (const element of elements) {
-   
+    const helpText = document.getElementById (`${element.id}Help`)
         element.addEventListener("invalid", (event) => {
 			
 			event.preventDefault();
+            helpText.classList.add("text-danger");
 			element.classList.add("is-invalid");
 
 			

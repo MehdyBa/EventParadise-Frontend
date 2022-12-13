@@ -32,12 +32,12 @@
           <div class="valid-feedback">
             Ce champ est obligatoire
           </div>
-          <div class="form-text" for="name" id="name">Nom de l'évènement.</div>
+          <div class="form-text" for="name" id="nameHelp">Nom de l'évènement.</div>
         </div>
         <div class="col-md-4">
           <label for="date" class="form-label">Date</label>
           <input name="date" type="date" class="form-control" id="date" required>
-          <div class="form-text" for="date">Date de l'évènement.</div>
+          <div class="form-text" for="date" id="dateHelp">Date de l'évènement.</div>
         </div>
         <div class="col-md-4">
           <label for="lieu" class="form-label">Lieu</label>
@@ -47,19 +47,19 @@
             <option>Rennes</option>
             <option>Marseille</option>
           </select>
-          <div class="form-text" for="lieu" id="lieu">Lieu de l'évènement.</div>
+          <div class="form-text" for="lieu" id="lieuHelp">Lieu de l'évènement.</div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-8">
           <label for="thème" class="form-label">Thème</label>
-          <select name="thème" class="form-select" id="thème" required>
+          <select name="thème" class="form-select" id="theme" required>
             <option selected disabled value="">Choisir un thème dans la liste</option>
             <option>Écologie</option>
             <option>Ressources Humaines</option>
             <option>Tech</option>
           </select>
-          <div class="form-text" for="thème" id="thème">Thème de l'évènement.</div>
+          <div class="form-text" for="thème" id="themeHelp">Thème de l'évènement.</div>
         </div>
         <div class=" col-md-4">
           <label for="tarif" class="form-label">Tarif</label>
@@ -67,13 +67,13 @@
             <span class="input-group-text" id="inputGroupPrepend">€</span>
             <input name="tarif" type="number" min="1" class="form-control" id="tarif" aria-describedby="inputGroupPrepend" required>
           </div>
-          <div class="form-text" for="tarif" id="tarif">Tarif journalier de l'évènement.</div>
+          <div class="form-text" for="tarif" id="tarifHelp">Tarif journalier de l'évènement.</div>
         </div>
       </div>
       <div class="col-md-12">
         <label for="description" class="form-label">Description</label>
         <textarea name="description" class="form-control" id="description" rows="3" min="1" max="1000" required></textarea>
-        <div class="form-text" for="description" id="description">Description de l'évènement.</div>
+        <div class="form-text" for="description" id="descriptionHelp">Description de l'évènement.</div>
       </div>
       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
         <button type="submit" class="btn btn-primary" id="liveToastBtn">Sauvegarder</button>
