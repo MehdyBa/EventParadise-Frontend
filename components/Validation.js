@@ -8,17 +8,18 @@ for (const element of elements) {
             helpText.classList.add("text-danger");
 			element.classList.add("is-invalid");
         
-		});
-      element.addEventListener("change", (event) => {
-        const validity = element.checkValidity();
-        if (validity) {
-            const helpText = document.getElementById (`${element.id}Help`);
-            helpText.classList.remove("text-danger");
-            helpText.classList.add("text-success");
-            element.classList.add("is-valid");
-            element.classList.remove("is-invalid");
-            console.log(element.name)
-        }
+	});
+     
+        element.addEventListener("change", (event) => {
+            const validity = element.checkValidity();
+            if (validity) {
+                const helpText = document.getElementById (`${element.id}Help`);
+                helpText.classList.remove("text-danger");
+                helpText.classList.add("text-success");
+                element.classList.add("is-valid");
+                element.classList.remove("is-invalid");
+                console.log(element.name)
+            }
     
     });
         
